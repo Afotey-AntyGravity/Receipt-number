@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content_wrapper %}
+
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Proforma</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Proforma</a></li>
+              <li class="breadcrumb-item active">Proforma</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+<br>
+    <div class="row">
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-center text-white  mb-3" id="total-orders">
+			  	<div class="card-header">
+			  		<h5 class="card-title">Total Orders</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title"></h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-center text-white  mb-3" id="orders-delivered">
+			  	<div class="card-header">
+			  		<h5 class="card-title">Orders Delivered</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title"></h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-center text-white  mb-3" id="orders-pending">
+			  	<div class="card-header">
+			  		<h5 class="card-title">Orders Pending</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title"></h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box shadow-none">
+              <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Standard Sheets</span>
+                  <a href="#" class="small-box-footer"><span class="info-box-number">None</span></a>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box shadow-sm">
+              <span class="info-box-icon bg-success"><i class="far fa-flag"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Long Spans</span>
+                  <a href="#" class="small-box-footer"><span class="info-box-number">Small</span></a>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box shadow">
+              <span class="info-box-icon bg-warning"><i class="far fa-copy"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Shadows</span>
+                  <a href="#" class="small-box-footer"><span class="info-box-number">Regular</span></a>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box shadow-lg">
+              <span class="info-box-icon bg-danger"><i class="far fa-star"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Shadows</span>
+                  <a href="#" class="small-box-footer"><span class="info-box-number">Large</span></a>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+
+
+  </div>
+{% endblock %}

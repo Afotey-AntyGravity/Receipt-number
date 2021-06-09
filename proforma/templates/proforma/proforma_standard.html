@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content_wrapper %}
+
+
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Standard Sheet</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="{% url 'proforma:proforma_receipt' %}">Proforma</a></li>
+              <li class="breadcrumb-item active">Standard Sheet</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+      <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                  <span class="info-box-icon bg-info"><i class="far fa-copy"></i></span>
+
+                  <div class="info-box-content">
+                    <span class="info-box-text"><a href="{% url 'proforma:create_proforma_standard' %}">New Profroma</a></span>
+                    <span class="info-box-number">13,648</span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+      </div>
+
+
+    <div class="card mb-3">
+    <div class="card-header">
+      <i class="fas fa-table"></i>
+      Proforma</div>
+
+        <table id="table_id" class="display">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Short Name</th>
+              <th>Date Created</th>
+              <th>Delete</th>
+
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>ID</th>
+              <th>Reference ID</th>
+              <th>Customer</th>
+              <th>Date Created</th>
+              <th>Delete</th>
+
+            </tr>
+          </tfoot>
+          <tbody>
+            {% for i in ProformaStandard %}
+            <tr>
+              <td>{{i.id}}</td>
+              <td><a href="#">{{i.reference_Number}}</a></td>
+              <td>{{i.customer}}</td>
+              <td>{{i.date}}</td>
+              <td><a class="btn btn-sm btn-danger" href="">Delete</a></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+      </div>
+
+
+  </div>
+
+
+
+{% endblock %}
